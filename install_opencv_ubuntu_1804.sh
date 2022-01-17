@@ -65,7 +65,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D INSTALL_C_EXAMPLES=ON \
 	-D INSTALL_PYTHON_EXAMPLES=ON \
 	-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
-  -D PYTHON_EXECUTABLE=/usr/bin/python3 \
+	-D PYTHON_EXECUTABLE=/usr/bin/python3 \
 	-D BUILD_EXAMPLES=ON ..
 
 # OPENCV_EXTRA_MODULES_PATH path can be differenet depending upon opencv_contrib/modules location
