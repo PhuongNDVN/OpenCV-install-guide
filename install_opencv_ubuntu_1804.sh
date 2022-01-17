@@ -5,8 +5,12 @@
 # sudo pip3 install opencv-contrib-python
 # But this easy pypi installation can’t open video files on GNU/Linux distribution or on mac OS X system.
 # And on some system opencv binaries provided packages are not compiled.
-# Therefor we have no way rather than build it from source. 
+# Therefor we have no way rather than build it from source.
 
+# renove previous opencv version
+sudo apt-get purge '*opencv*'
+sudo find / -name "*opencv*" -exec rm -rf {} \;
+sudo find / -name "cv2" -exec rm -rf {} \;
 
 ### first update and upgrade pre-install apt-get packages.
 sudo apt-get update
