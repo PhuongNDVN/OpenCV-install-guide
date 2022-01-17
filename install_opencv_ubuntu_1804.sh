@@ -104,3 +104,4 @@ sudo mv cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
 # copy opencv libs to virtual environment
 cd ~/.virtualenvs/venv_yolov5/lib/python3.6/site-packages/
 ln -s /usr/local/lib/python3.6/site-packages/cv2/python-3.6/cv2.so cv2.so
+# add export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH to ~/.bashrc
