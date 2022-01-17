@@ -87,7 +87,7 @@ sudo ldconfig
 find /usr/local/lib/ -type f -name "cv2*.so"
 
 # my binary is installed in dist-packages. above command shows following output
-#/usr/local/lib/python3.6/dist-packages/cv2/cv2.cpython-36m-x86_64-linux-gnu.so
+#/usr/local/lib/python3.6/site-packages/cv2/python-3.6/cv2.cpython-36m-x86_64-linux-gnu.so
 # now we need to rename it to cv2.so
 
 cd /usr/local/lib/python3.6/dist-packages/cv2/
@@ -99,4 +99,4 @@ sudo mv cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
 
 # copy opencv libs to virtual environment
 cd ~/.virtualenvs/venv_yolov5/lib/python3.6/site-packages/
-ln -s /usr/local/lib/python3.6/dist-packages/cv2/cv2.so cv2.so
+ln -s /usr/local/lib/python3.6/site-packages/cv2/python-3.6/cv2.so cv2.so
